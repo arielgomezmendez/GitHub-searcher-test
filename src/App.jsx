@@ -1,4 +1,5 @@
 import './App.css'
+import GitHubUser from './components/GitHubUser'
 import Search from './components/Search'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <div>
         <Search />
+        <GitHubUser />
       </div>
 
     </>
