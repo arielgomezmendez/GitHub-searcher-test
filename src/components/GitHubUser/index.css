@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
+    gap: 1rem;
     grid-template-areas:
         "userInfo repositoriesList repositoriesList recentSearches"
         "userInfo repositoriesList repositoriesList recentSearches"
