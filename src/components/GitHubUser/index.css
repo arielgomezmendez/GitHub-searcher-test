@@ -47,10 +47,30 @@
     z-index: 1;
 }
 
+/*User*/
+.user {
+    font-size: 2.4rem;
+}
+
+/*User name*/
+.userName {
+    font-size: 2rem;
+}
+
+/*Number of followers, number of repositories */
+.number {
+    font-size: 1.8rem;
+}
+
 /*Icons*/
 .icons {
     display: flex;
     flex-direction: row;
+}
+
+.bio {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 
 /*Grid section with the list of repositories */
