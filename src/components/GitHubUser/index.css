@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 1rem;
+    gap: 0.6rem;
+    padding: 1rem;
     grid-template-areas:
         "userInfo repositoriesList repositoriesList recentSearches"
         "userInfo repositoriesList repositoriesList recentSearches"
@@ -12,11 +13,12 @@
 /*Grid section with the user infromation */
 .userInfo {
     grid-area: userInfo;
-    background-color: #ff9af8;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat';
+    border: 1.2px solid #b5b0b0;
+    border-radius: 10px;
 }
 
 /*User Picture*/
@@ -85,11 +87,13 @@
 /*Grid section with the list of repositories */
 .repositoriesList {
     grid-area: repositoriesList;
-    background-color: rgb(233, 140, 140);
+    border: 1.2px solid #b5b0b0;
+    border-radius: 10px;
 }
 
 /*Grid section with  the search information*/
 .recentSearches {
     grid-row: recentSearches;
-    background-color: rgb(252, 252, 139);
+    border: 1.2px solid #b5b0b0;
+    border-radius: 10px;
 }
