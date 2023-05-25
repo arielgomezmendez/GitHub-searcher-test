@@ -3,8 +3,7 @@ import "./index.css"
 
 const GitHubUser = () => {
     return (
-        <div>
-            <h1>GitHubUser</h1>
+        <>
             <div className='userInfo'>
                 <div className='userPicture'>
                     <img src="" alt="" />
@@ -16,10 +15,20 @@ const GitHubUser = () => {
                         ></path>
                     </svg>
                 </div>
+                <h1>Name</h1>
+                <h2>Username</h2>
+                <p>Seguidores</p>
+                <p>Repositorios publicos</p>
+                <p>Biografia del usuario</p>
             </div>
-            <div className='repositoriesList'></div>
-            <div className='recentSearches'></div>
-        </div>
+            <div className='repositoriesList'>
+                <h1>Nombre del repositorio</h1>
+                <p>Descripcion</p>
+            </div>
+            <div className='recentSearches'>
+                <h1>Cards</h1>
+            </div>
+        </>
     )
 }
 
