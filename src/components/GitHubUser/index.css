@@ -1,9 +1,9 @@
 .mainContainer {
-    padding: 1rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 0.6rem;
+    gap: 2rem;
     grid-template-areas:
         "userInfo repositoriesList repositoriesList recentSearches"
         "userInfo repositoriesList repositoriesList recentSearches"
