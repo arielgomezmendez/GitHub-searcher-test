@@ -19,7 +19,12 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+}
+
+.title {
+    font-family: 'Monserrat';
+    font-size: 2.4rem;
 }
 
 /*Grid section with  the search information*/
