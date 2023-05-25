@@ -1,24 +1,25 @@
 /*Search*/
 .search {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0.6rem;
     grid-template-rows: auto;
     grid-template-areas:
-        "logo input input button";
+        "logo form form form";
 }
 
 /*GitHub logo*/
 .gitHubLogo {
+    grid-area: logo;
     width: 200px;
     height: 80px;
 }
 
 /*Form*/
 .search form {
+    grid-area: form;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 /*Input*/
@@ -31,6 +32,7 @@
     outline: none;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     box-shadow: 0px 0px 20px -18px;
+    grid-area: input;
 }
 
 .input:hover {
@@ -68,6 +70,7 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
+    grid-area: button;
 }
 
 button:disabled {
