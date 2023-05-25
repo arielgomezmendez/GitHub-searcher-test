@@ -7,8 +7,8 @@ const Search = () => {
     return (
         <div className="group">
             <img src={githubLogo} alt="GitHub" className='gitHubLogo' />
-            <input placeholder="Searth the internet..." type="text" name="text" class="input" />
-            <button>Button</button>
+            <input placeholder="User name" type="text" name="text" class="input" />
+            <button>Search</button>
         </div>
     )
 }
