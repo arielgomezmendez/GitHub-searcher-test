@@ -1,3 +1,16 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "userInfo repositoriesList repositoriesList recentSearches";
+}
+
+.userInfo {
+    grid-area: userInfo;
+}
+
+/*User Picture*/
 .userPicture {
     overflow: hidden;
     object-fit: cover;
@@ -24,4 +37,12 @@
     border: none;
     border-radius: 50% 50%;
     z-index: 1;
+}
+
+.repositoriesList {
+    grid-area: repositoriesList;
+}
+
+.recentSearches {
+    grid-row: recentSearches;
 }
