@@ -6,9 +6,7 @@ import githubLogo from "../../assets/github-logo.png"
 const Search = () => {
     return (
         <div className="group">
-            <picture>
-                <img src={githubLogo} alt="GitHub" />
-            </picture>
+            <img src={githubLogo} alt="GitHub" className='gitHubLogo' />
             <input placeholder="Searth the internet..." type="text" name="text" class="input" />
             <button>Button</button>
         </div>
