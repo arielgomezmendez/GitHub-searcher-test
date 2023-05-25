@@ -10,6 +10,7 @@ const Search = () => {
                 <img src={githubLogo} alt="GitHub" />
             </picture>
             <input placeholder="Searth the internet..." type="text" name="text" class="input" />
+            <button>Button</button>
         </div>
     )
 }
