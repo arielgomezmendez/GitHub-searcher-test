@@ -11,8 +11,8 @@
 /*GitHub logo*/
 .gitHubLogo {
     grid-area: logo;
-    width: 200px;
-    height: 80px;
+    width: 20rem;
+    height: 8rem;
 }
 
 /*Form*/
