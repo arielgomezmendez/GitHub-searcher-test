@@ -1,16 +1,15 @@
 /*GitHub logo*/
 .gitHubLogo {
-    width: 180px;
+    width: 200px;
     height: 80px;
 }
 
 /*Input*/
 .input {
-    width: 100%;
-    max-width: 220px;
-    height: 26px;
-    padding: 12px;
-    border-radius: 12px;
+    width: 30rem;
+    height: 4.2rem;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
     border: 1.5px solid lightgrey;
     outline: none;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
