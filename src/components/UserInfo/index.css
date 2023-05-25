@@ -13,26 +13,26 @@
 .userPicture {
     overflow: hidden;
     object-fit: cover;
-    width: 14rem;
-    height: 14rem;
+    width: 18rem;
+    height: 18rem;
     border: 4px solid #7cdacc;
     border-radius: 999px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 2rem;
 }
 
 .userPicture svg {
-    width: 8rem;
+    width: 10rem;
     fill: currentColor;
     position: relative;
+    color: rgb(200, 200, 200);
 }
 
 .userPicture img {
-    width: 14rem;
-    height: 14rem;
+    width: 18rem;
+    height: 18rem;
     position: absolute;
     border: none;
     border-radius: 50% 50%;
