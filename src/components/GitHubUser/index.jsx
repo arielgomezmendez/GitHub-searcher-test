@@ -1,6 +1,7 @@
 import React from 'react'
 import { IconNotebook, IconUsers } from '@tabler/icons-react';
 import "./index.css"
+import Repo from '../Repo';
 
 
 const GitHubUser = () => {
@@ -32,12 +33,7 @@ const GitHubUser = () => {
             </article>
             {/*List of resents repositories */}
             <ul className='repositoriesList'>
-                <li><h1>Nombre del repositorio</h1>
-                    <p>Descripcion</p></li>
-                <li><h1>Nombre del repositorio</h1>
-                    <p>Descripcion</p></li>
-                <li><h1>Nombre del repositorio</h1>
-                    <p>Descripcion</p></li>
+                <Repo />
             </ul>
             <article className='recentSearches'>
                 <h1>Cards</h1>
