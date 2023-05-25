@@ -5,10 +5,13 @@ import githubLogo from "../../assets/github-logo.png"
 
 const Search = () => {
     return (
-        <div className="group">
+        <div className="search">
             <img src={githubLogo} alt="GitHub" className='gitHubLogo' />
-            <input placeholder="User name" type="text" name="text" class="input" />
-            <button>Search</button>
+            <form>
+                <input placeholder="User name" type="text" name="text" class="input" />
+                <button>Search</button>
+            </form>
+
         </div>
     )
 }
