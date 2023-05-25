@@ -30,12 +30,15 @@ const GitHubUser = () => {
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 </p>
             </article>
-
-            <article className='repositoriesList'>
-                <h1>Nombre del repositorio</h1>
-                <p>Descripcion</p>
-            </article>
-
+            {/*List of resents repositories */}
+            <ul className='repositoriesList'>
+                <li><h1>Nombre del repositorio</h1>
+                    <p>Descripcion</p></li>
+                <li><h1>Nombre del repositorio</h1>
+                    <p>Descripcion</p></li>
+                <li><h1>Nombre del repositorio</h1>
+                    <p>Descripcion</p></li>
+            </ul>
             <article className='recentSearches'>
                 <h1>Cards</h1>
             </article>
