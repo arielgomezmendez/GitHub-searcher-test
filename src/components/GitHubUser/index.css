@@ -12,6 +12,9 @@
 .userInfo {
     grid-area: userInfo;
     background-color: #ff9af8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*User Picture*/
@@ -41,6 +44,12 @@
     border: none;
     border-radius: 50% 50%;
     z-index: 1;
+}
+
+/*Icons*/
+.icons {
+    display: flex;
+    flex-direction: row;
 }
 
 /*Grid section with the list of repositories */

@@ -20,8 +20,11 @@ const GitHubUser = () => {
                 </div>
                 <h2>Name</h2>
                 <h2>Username</h2>
-                <IconNotebook />
-                <IconUsers />
+                <div className='icons'>
+                    <IconNotebook /> <p>4</p>
+                    <IconUsers /> <p>4</p>
+                </div>
+
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     <br></br>
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
