@@ -11,6 +11,7 @@
 /*Grid section with the user infromation */
 .userInfo {
     grid-area: userInfo;
+    background-color: #ff9af8;
 }
 
 /*User Picture*/
@@ -45,9 +46,11 @@
 /*Grid section with the list of repositories */
 .repositoriesList {
     grid-area: repositoriesList;
+    background-color: rgb(233, 140, 140);
 }
 
 /*Grid section with  the search information*/
 .recentSearches {
     grid-row: recentSearches;
+    background-color: rgb(252, 252, 139);
 }

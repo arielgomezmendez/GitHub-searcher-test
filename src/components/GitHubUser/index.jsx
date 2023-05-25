@@ -1,8 +1,11 @@
 import React from 'react'
+import { IconNotebook, IconUsers } from '@tabler/icons-react';
 import "./index.css"
+
 
 const GitHubUser = () => {
     return (
+        //User information
         <section className='mainContainer'>
             <article className='userInfo'>
                 <div className='userPicture'>
@@ -15,11 +18,14 @@ const GitHubUser = () => {
                         ></path>
                     </svg>
                 </div>
-                <h1>Name</h1>
+                <h2>Name</h2>
                 <h2>Username</h2>
-                <p>Seguidores</p>
-                <p>Repositorios publicos</p>
-                <p>Biografia del usuario</p>
+                <IconNotebook />
+                <IconUsers />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <br></br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
             </article>
 
             <article className='repositoriesList'>
