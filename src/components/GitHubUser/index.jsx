@@ -14,6 +14,7 @@ const GitHubUser = () => {
             <ul className='repositoriesList'>
                 <Repo />
             </ul>
+
             <article className='recentSearches'>
                 <h1>Cards</h1>
             </article>
