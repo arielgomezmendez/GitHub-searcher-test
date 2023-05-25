@@ -9,79 +9,7 @@
         "userInfo repositoriesList repositoriesList recentSearches";
 }
 
-/*Grid section with the user infromation */
-.userInfo {
-    grid-area: userInfo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Montserrat';
-    border: 1.2px solid #b5b0b0;
-    border-radius: 10px;
-}
 
-/*User Picture*/
-.userPicture {
-    overflow: hidden;
-    object-fit: cover;
-    width: 14rem;
-    height: 14rem;
-    border: 4px solid #7cdacc;
-    border-radius: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 2rem;
-}
-
-.userPicture svg {
-    width: 8rem;
-    fill: currentColor;
-    position: relative;
-}
-
-.userPicture img {
-    width: 14rem;
-    height: 14rem;
-    position: absolute;
-    border: none;
-    border-radius: 50% 50%;
-    z-index: 1;
-}
-
-/*User*/
-.user {
-    font-size: 2.4rem;
-    margin-top: 2rem;
-}
-
-/*User name*/
-.userName {
-    font-size: 2rem;
-    margin-top: 0.8rem;
-}
-
-/*Icons*/
-.icons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-}
-
-/*Number of followers, number of repositories */
-.number {
-    font-size: 1.8rem;
-    margin-right: 1rem;
-}
-
-
-.bio {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    margin: 2rem;
-    text-align: center;
-}
 
 /*Grid section with the list of repositories */
 .repositoriesList {
