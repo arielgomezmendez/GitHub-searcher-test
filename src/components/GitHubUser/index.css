@@ -3,9 +3,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
+        "userInfo repositoriesList repositoriesList recentSearches"
+        "userInfo repositoriesList repositoriesList recentSearches"
         "userInfo repositoriesList repositoriesList recentSearches";
 }
 
+/*Grid section with the user infromation */
 .userInfo {
     grid-area: userInfo;
 }
@@ -39,10 +42,12 @@
     z-index: 1;
 }
 
+/*Grid section with the list of repositories */
 .repositoriesList {
     grid-area: repositoriesList;
 }
 
+/*Grid section with  the search information*/
 .recentSearches {
     grid-row: recentSearches;
 }
