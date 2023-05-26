@@ -1,43 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./index.css"
 import githubLogo from "../../assets/github-logo.png"
+import MyContext from '../../context/MyContext'
 
 
 const Search = () => {
 
-    const [userName, setUser] = useState("")
-    const [userInfo, setUserInfo] = useState("")
-
-    const token = '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'; // personal token to call the API
+    const { setUserName, getUser } = useContext(MyContext)
 
     //Function to get the user name
     const onchange = (event) => {
-        setUser(event.target.value)
+        setUserName(event.target.value)
     }
-
-    //Function to make the request to the API
-    const getUser = async () => {
-        try {
-            console.log("Funcion obtain user ejecutada")
-            let response = await fetch(
-                `https://api.github.com/users/${userName}`, {
-                headers: {
-                    Authorization: `token ${token}`
-                }
-            });
-
-            let data = await response.json();
-            console.log(data.name);
-            setUserInfo(data);
-
-        } catch (error) {
-            console.log(error)
-        }
-    };
 
     const onsubmit = (event) => {
         event.preventDefault()
-        getUser(token, userName)
+        getUser()
     }
 
     return (

@@ -1,17 +1,19 @@
 import './App.css'
 import GitHubUser from './components/GitHubUser'
 import Search from './components/Search'
+import ContextProvider from './context/ContextProvider'
+
+//import MyContext from './context/MyContext'
 
 function App() {
 
   return (
-    <>
-      <div className='app'>
-        <Search />
-        <GitHubUser />
-      </div>
 
-    </>
+    <ContextProvider>
+      <Search />
+      <GitHubUser />
+    </ContextProvider>
+
   )
 }
 
