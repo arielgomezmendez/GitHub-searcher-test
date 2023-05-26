@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import MyContext from './MyContext'
 
 const ContextProvider = ({ children }) => {
-    const [userName, setUserName] = useState("")
-    const [userInfo, setUserInfo] = useState("")
+    const [userName, setUserName] = useState("") //state to save the user name
+    const [userInfo, setUserInfo] = useState("") //state to save the information of user
+    const [userRepos, setUserRepos] = useState("") //state to save the  repositories of user
 
 
     const token = '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'; // personal token to call the API
