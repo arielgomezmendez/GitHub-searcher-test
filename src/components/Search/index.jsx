@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./index.css"
 import githubLogo from "../../assets/github-logo.png"
 
@@ -8,7 +8,7 @@ const Search = () => {
     const [userName, setUser] = useState("")
     const [userInfo, setUserInfo] = useState("")
 
-    const token = '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'; // personal token to call the API
+    const token = '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'; // personal token to call the API
 
     //Function to get the user name
     const onchange = (event) => {
@@ -35,7 +35,7 @@ const Search = () => {
         }
     };
 
-    const onclick = (event) => {
+    const onsubmit = (event) => {
         event.preventDefault()
         getUser(token, userName)
     }
@@ -43,9 +43,9 @@ const Search = () => {
     return (
         <div className="search">
             <img src={githubLogo} alt="GitHub" className='gitHubLogo' />
-            <form>
+            <form onSubmit={onsubmit}>
                 <input placeholder="User name" type="text" name="text" className="input" onChange={onchange} />
-                <button onClick={onclick}>Search</button>
+                <button >Search</button>
             </form>
 
         </div>
