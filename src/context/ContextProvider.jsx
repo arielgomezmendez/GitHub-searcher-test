@@ -5,14 +5,16 @@ const ContextProvider = ({ children }) => {
     const [userName, setUserName] = useState("")
     const [userInfo, setUserInfo] = useState("")
 
+
     const token = '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'; // personal token to call the API
+    const userLink = `https://api.github.com/users/${userName}`
 
     //Function to make the request to the API
     const getUser = async () => {
         try {
             console.log("Funcion obtain user ejecutada")
             let response = await fetch(
-                `https://api.github.com/users/${userName}`, {
+                userLink, {
                 headers: {
                     Authorization: `token ${token}`
                 }
