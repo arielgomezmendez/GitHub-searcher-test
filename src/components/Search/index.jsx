@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./index.css"
 import githubLogo from "../../assets/github-logo.png"
 
@@ -8,7 +8,7 @@ const Search = () => {
     const [userName, setUser] = useState("")
     const [userInfo, setUserInfo] = useState("")
 
-    const token = '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'; // personal token to call the API
+    const token = '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'; // personal token to call the API
 
     //Function to get the user name
     const onchange = (event) => {
@@ -16,6 +16,7 @@ const Search = () => {
     }
 
     //Function to make the request to the API
+
     const getUser = async () => {
         try {
             console.log("Funcion obtain user ejecutada")
@@ -27,8 +28,8 @@ const Search = () => {
             });
 
             let data = await response.json();
+            console.log(data);
             setUserInfo(data);
-            console.log(userInfo);
 
         } catch (error) {
             console.log(error)
