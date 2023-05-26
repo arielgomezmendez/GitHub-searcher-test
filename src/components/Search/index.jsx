@@ -8,7 +8,7 @@ const Search = () => {
     const [userName, setUser] = useState("")
     const [userInfo, setUserInfo] = useState("")
 
-    const token = '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'; // personal token to call the API
+    const token = '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'; // personal token to call the API
 
     //Function to get the user name
     const onchange = (event) => {
@@ -16,7 +16,6 @@ const Search = () => {
     }
 
     //Function to make the request to the API
-
     const getUser = async () => {
         try {
             console.log("Funcion obtain user ejecutada")
@@ -28,7 +27,7 @@ const Search = () => {
             });
 
             let data = await response.json();
-            console.log(data);
+            console.log(data.name);
             setUserInfo(data);
 
         } catch (error) {
