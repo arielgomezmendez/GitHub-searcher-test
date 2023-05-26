@@ -5,7 +5,7 @@ import MyContext from '../../context/MyContext'
 
 
 const Search = () => {
-
+    //Get info from the provider Contextprovider
     const { setUserName, getUser } = useContext(MyContext)
 
     //Function to get the user name

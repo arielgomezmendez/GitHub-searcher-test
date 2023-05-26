@@ -28,7 +28,7 @@ const ContextProvider = ({ children }) => {
     };
 
     return (
-        <MyContext.Provider value={{ userInfo, setUserName, getUser }}>
+        <MyContext.Provider value={{ setUserName, getUser }}>
             {children}
         </MyContext.Provider>
     )
