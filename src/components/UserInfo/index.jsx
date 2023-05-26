@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./index.css"
 import { IconNotebook, IconUsers } from '@tabler/icons-react';
+import MyContext from '../../context/MyContext';
 
 const UserInfo = () => {
+
+    const { userInfo } = useContext(MyContext)
     return (
         <>
             <article className='userInfo'>
                 <div className='userPicture'>
-                    <img src="" alt="" />
+                    <img src={userInfo.avatar_url} alt="Avatar" />
                     <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0
@@ -16,17 +19,14 @@ const UserInfo = () => {
                         ></path>
                     </svg>
                 </div>
-                <h2 className='user'>Name</h2>
-                <h2 className='userName'>Username</h2>
+                <h2 className='user'>{userInfo.name}</h2>
+                <h2 className='userName'>{userInfo.login}</h2>
                 <div className='icons'>
-                    <IconNotebook /> <p className='number'>4</p>
-                    <IconUsers /> <p className='number'>4</p>
+                    <IconNotebook /> <p className='number'>{`${userInfo.followers} followers`}</p>
+                    <IconUsers /> <p className='number'>{`${userInfo.public_repos} public repositories`}</p>
                 </div>
 
-                <p className='bio'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    <br></br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
+                <p className='bio'>{userInfo.bio}</p>
             </article>
         </>
     )
