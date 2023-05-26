@@ -1,12 +1,12 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import "./index.css"
 import githubLogo from "../../assets/github-logo.png"
 import MyContext from '../../context/MyContext'
 
 
 const Search = () => {
-    //Get info from the provider Contextprovider
-    const { setUserName, getUser } = useContext(MyContext)
+
+    const { setUserName, getUser } = useContext(MyContext) //Get from ContextProvider
 
     //Function to get the user name
     const onchange = (event) => {
