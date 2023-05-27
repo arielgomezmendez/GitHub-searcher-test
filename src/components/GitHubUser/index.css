@@ -1,13 +1,13 @@
 .mainContainer {
     padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 2rem;
     grid-template-areas:
-        "userInfo repositoriesList repositoriesList recentSearches"
-        "userInfo repositoriesList repositoriesList recentSearches"
-        "userInfo repositoriesList repositoriesList recentSearches";
+        "userInfo repositoriesList "
+        "userInfo repositoriesList "
+    ;
 }
 
 /*Grid section with the list of repositories */
@@ -23,11 +23,4 @@
 .title {
     font-family: 'Montserrat';
     font-size: 2.4rem;
-}
-
-/*Grid section with  the search information*/
-.recentSearches {
-    grid-row: recentSearches;
-    border: 1.2px solid #b5b0b0;
-    border-radius: 10px;
 }

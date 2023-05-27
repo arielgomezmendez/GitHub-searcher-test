@@ -1,20 +1,26 @@
 /*Search*/
 .search {
-    display: grid;
     padding: 1rem;
     background-color: #24292f;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    /*grid-template-columns: 1fr 1fr;
     gap: 0.6rem;
     grid-template-rows: auto;
     grid-template-areas:
-        "logo form form form";
+        "logo form ";*/
 }
 
 /*GitHub logo*/
 .gitHubLogo {
-    grid-area: logo;
+    margin-right: 14rem;
     width: 18rem;
-    height: 6rem;
+    height: 5.4rem;
+
 }
 
 /*Form*/
@@ -22,12 +28,14 @@
     grid-area: form;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 /*Input*/
 .input {
     background-color: transparent;
-    width: 30rem;
+    width: 50rem;
     height: 4.2rem;
     padding: 1.2rem;
     border-radius: 8px;
@@ -56,7 +64,7 @@
 
 /*Button*/
 button {
-    appearance: none;
+    margin-left: 8rem;
     background-color: #1f883d;
     border: 2px solid #1f883d;
     border-radius: 8px;
@@ -68,7 +76,7 @@ button {
     font-weight: 600;
     line-height: normal;
     height: 4.2rem;
-    min-width: 0;
+    width: 12rem;
     outline: none;
     padding: 1rem 2.8rem;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);

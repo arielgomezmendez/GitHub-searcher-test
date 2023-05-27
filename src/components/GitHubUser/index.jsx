@@ -23,10 +23,6 @@ const GitHubUser = () => {
                     ))}
                 </ul>
             </article>
-
-            <article className='recentSearches'>
-                <h1>Cards</h1>
-            </article>
         </section>
     )
 }

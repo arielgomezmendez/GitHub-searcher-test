@@ -10,8 +10,11 @@ function App() {
   return (
 
     <ContextProvider>
-      <Search />
-      <GitHubUser />
+      <div className='app-container'>
+        <Search />
+        <GitHubUser />
+      </div>
+
     </ContextProvider>
 
   )
