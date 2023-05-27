@@ -1,22 +1,27 @@
 .mainContainer {
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 2rem;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /*display: grid;
+    grid-template-columns: 0.6fr 0.8fr;
+    grid-template-rows: 40rem;
+    gap: 5rem;
     grid-template-areas:
         "userInfo repositoriesList "
-        "userInfo repositoriesList "
-    ;
+
+    ;*/
 }
 
 /*Grid section with the list of repositories */
 .repositoriesList {
     grid-area: repositoriesList;
-    border: 1.2px solid #b5b0b0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    width: 56rem;
+    margin-left: 6rem;
 
 }
 
