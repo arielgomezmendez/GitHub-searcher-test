@@ -72,8 +72,7 @@ button {
     line-height: normal;
     height: 4.2rem;
     width: 18%;
-    outline: none;
-    padding: 1rem 2.8rem;
+    padding: 1rem;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
     -webkit-user-select: none;
