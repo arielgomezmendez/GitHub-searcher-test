@@ -22,7 +22,7 @@ const Search = () => {
         <div className="search">
             <img src={githubLogo} alt="GitHub" className='gitHubLogo' />
             <form onSubmit={onsubmit}>
-                <input placeholder="User name" type="text" name="text" className="input" onChange={onchange} />
+                <input placeholder="User name" type="text" name="text" className="input" onChange={onchange} required />
                 <button >Search</button>
             </form>
 
