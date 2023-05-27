@@ -22,8 +22,8 @@ const UserInfo = () => {
                 <h2 className='user'>{userInfo.name}</h2>
                 <h2 className='userName'>{userInfo.login}</h2>
                 <div className='icons'>
-                    <IconNotebook /> <p className='number'>{userInfo.followers}</p>
-                    <IconUsers /> <p className='number'>{userInfo.public_repos}</p>
+                    <IconNotebook /> <p className='number'>{`${userInfo.public_repos} public repos`}</p>
+                    <IconUsers /> <p className='number'>{`${userInfo.followers} followers`}</p>
                 </div>
 
                 <p className='bio'>{userInfo.bio}</p>
