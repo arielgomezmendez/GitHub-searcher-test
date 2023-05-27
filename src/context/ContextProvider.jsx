@@ -30,11 +30,8 @@ const ContextProvider = ({ children }) => {
             //Get the user repositories
             let reposResponse = await fetch(userReposLink);
             let repositories = await reposResponse.json()
-            setUserRepos(repositories)
-            console.log(repositories)
-            userRepos.map((e, i) => {
-                console.log(userRepos[i].name)
-            });
+            let recentRepos = repositories.slice(0, 3) // get the last 3 repos created by the user
+            setUserRepos(recentRepos)
 
         } catch (error) {
             console.log(error)
