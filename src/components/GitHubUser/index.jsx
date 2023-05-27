@@ -12,9 +12,14 @@ const GitHubUser = () => {
     return (
         //User information
         <section className='mainContainer'>
-            {!Array.isArray(userRepos) ? <BackIllustration /> : <UserInfo />}
-            <ReposList />
-
+            {!Array.isArray(userRepos) ? (
+                <BackIllustration />
+            ) : (
+                <>
+                    <UserInfo />
+                    <ReposList />
+                </>
+            )}
         </section>
     )
 }
