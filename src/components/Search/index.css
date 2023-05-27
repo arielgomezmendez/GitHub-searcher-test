@@ -11,7 +11,7 @@
 
 /*GitHub logo*/
 .gitHubLogo {
-    margin-right: 14rem;
+    margin-right: 12%;
     width: 18rem;
     height: 5.4rem;
 
@@ -59,7 +59,7 @@
 
 /*Button*/
 button {
-    margin-left: 8rem;
+    margin-left: 14%;
     background-color: #1f883d;
     border: 2px solid #1f883d;
     border-radius: 8px;
