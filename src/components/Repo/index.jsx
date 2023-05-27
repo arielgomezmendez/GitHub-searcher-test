@@ -7,7 +7,7 @@ const Repo = ({ name, description }) => {
         <>
             <li className='repo'>
                 <h1 className='repoName'>{name}</h1>
-                <p className='description'>{description || "Does not have description"}</p>
+                <p className='description'>{description || "Description don`t exist"}</p>
             </li>
 
         </>
