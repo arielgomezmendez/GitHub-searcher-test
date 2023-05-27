@@ -9,7 +9,8 @@ const ContextProvider = ({ children }) => {
 
     const token = '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'; // personal token to call the API
     const userLink = `https://api.github.com/users/${userName}`
-    const userReposLink = `https://api.github.com/users/${userName}/repos` //url of repositories
+    const userReposLink = `https://api.github.com/users/${userName}/repos?sort=created` //url to get the repositories sorted by creation date using
+    // ?sort=created
 
     //Function to make the request to the API
     const getUser = async () => {
