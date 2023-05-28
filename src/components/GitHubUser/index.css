@@ -4,3 +4,12 @@
     flex-direction: row;
     justify-content: center;
 }
+
+.wrongUser {
+    color: #cf222e;
+    position: relative;
+    bottom: 6rem;
+    left: 50rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+}

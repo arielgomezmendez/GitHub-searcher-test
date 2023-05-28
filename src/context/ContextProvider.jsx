@@ -5,6 +5,7 @@ const ContextProvider = ({ children }) => {
     const [userName, setUserName] = useState("") //state to save the user name
     const [userInfo, setUserInfo] = useState("") //state to save the information of user
     const [userRepos, setUserRepos] = useState("") //state to save the  repositories of user
+    const [error404, setError404] = useState(false)  //state to save the error 404, wrong user
 
 
     const token = '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'; // personal token to call the API
@@ -29,16 +30,21 @@ const ContextProvider = ({ children }) => {
             //Get the user repositories
             let reposResponse = await fetch(userReposLink);
             let repositories = await reposResponse.json()
-            let recentRepos = repositories.slice(0, 3) // get the last 3 repos created by the user
+            // get the last 3 repos created by the user
+            let recentRepos = repositories.slice(0, 3)
             setUserRepos(recentRepos)
+            setError404(false)
 
         } catch (error) {
-            console.log(error)
+            //Catch error 404, wrong user
+            setError404(true)
+            console.log("Status", error.status)
+
         }
     };
 
     return (
-        <MyContext.Provider value={{ userInfo, setUserName, getUser, setUserRepos, userRepos }}>
+        <MyContext.Provider value={{ userInfo, setUserName, getUser, setUserRepos, userRepos, error404, setError404 }}>
             {children}
         </MyContext.Provider>
     )
