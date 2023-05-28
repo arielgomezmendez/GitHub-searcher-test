@@ -7,7 +7,7 @@ const ContextProvider = ({ children }) => {
     const [userRepos, setUserRepos] = useState("") //state to save the  repositories of user
 
 
-    const token = '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'; // personal token to call the API
+    const token = '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'; // personal token to call the API
     const userLink = `https://api.github.com/users/${userName}`
     const userReposLink = `https://api.github.com/users/${userName}/repos?sort=created` //url to get the repositories sorted by creation date using
     // ?sort=created
