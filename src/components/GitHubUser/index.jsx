@@ -8,11 +8,12 @@ import "./mobile.css"
 
 
 const GitHubUser = () => {
-    const { userRepos, error404, setError404 } = useContext(MyContext)
+    const { userRepos, error, setError } = useContext(MyContext)
+
     return (
         //User information
         <section className='mainContainer'>
-            {error404 && <p className='wrongUser'>Wrong user</p>}
+            {error && <p className='wrongUser'>{error}</p>}
 
             {
                 !Array.isArray(userRepos) ? (
