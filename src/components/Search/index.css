@@ -19,7 +19,6 @@
 
 /*Form*/
 .search form {
-    grid-area: form;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -78,7 +77,6 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
-    grid-area: button;
 }
 
 button:disabled {

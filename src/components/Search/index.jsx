@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import "./index.css"
+import "./mobile.css"
 import githubLogo from "../../assets/github-logo.png"
 import MyContext from '../../context/MyContext'
 
