@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import "./index.css"
+import "./mobile.css"
 import { IconNotebook, IconUsers } from '@tabler/icons-react';
 import MyContext from '../../context/MyContext';
 

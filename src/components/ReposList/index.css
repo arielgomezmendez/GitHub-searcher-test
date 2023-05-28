@@ -1,11 +1,9 @@
 .repositoriesList {
-    grid-area: repositoriesList;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 50rem;
+    width: 30rem;
     margin-left: 6rem;
-
 }
 
 .title {

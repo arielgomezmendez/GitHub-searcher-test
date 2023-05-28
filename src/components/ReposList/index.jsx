@@ -7,7 +7,7 @@ const ReposList = () => {
     const { userRepos } = useContext(MyContext)
     console.log("userrepo", userRepos)
     return (
-        <div>
+        <>
             {/*List of resents repositories */}
             <article className='repositoriesList'>
                 <h1 className='title'>Last repositories</h1>
@@ -19,7 +19,7 @@ const ReposList = () => {
                     ))}
                 </ul>
             </article>
-        </div>
+        </>
     )
 }
 
