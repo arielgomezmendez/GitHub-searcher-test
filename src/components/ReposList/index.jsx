@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Repo from '../Repo'
 import MyContext from '../../context/MyContext'
+import "./index.css"
 
 const ReposList = () => {
     const { userRepos } = useContext(MyContext)
