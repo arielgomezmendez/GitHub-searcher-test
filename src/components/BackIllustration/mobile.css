@@ -2,10 +2,11 @@
     .backIllustration img {
         width: 90%;
         height: 16rem;
+        margin-top: 4rem;
     }
 
     .backIllustration h1 {
         font-size: 1.8rem;
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
 }
