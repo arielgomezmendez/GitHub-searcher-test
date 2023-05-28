@@ -1,6 +1,7 @@
 import React from 'react'
 import backIllustration from "../../assets/illustration-github.png"
 import "./index.css"
+import "./mobile.css"
 
 const BackIllustration = () => {
     return (
