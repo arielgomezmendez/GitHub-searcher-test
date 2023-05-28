@@ -9,7 +9,6 @@ import "./mobile.css"
 
 const GitHubUser = () => {
     const { userRepos } = useContext(MyContext)
-    console.log("userrepo", userRepos)
     return (
         //User information
         <section className='mainContainer'>

@@ -6,7 +6,6 @@ import "./mobile.css"
 
 const ReposList = () => {
     const { userRepos } = useContext(MyContext)
-    console.log("userrepo", userRepos)
     return (
         <>
             {/*List of resents repositories */}
