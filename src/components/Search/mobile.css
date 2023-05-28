@@ -1,0 +1,32 @@
+@media screen and (max-width: 767px) {
+    .search {
+        padding: 0.8rem;
+
+        width: 100%;
+    }
+
+    .gitHubLogo {
+        width: 8rem;
+        height: 2.6rem;
+        margin-top: 0.6rem;
+        margin-right: 6%;
+        margin-left: 1.2rem;
+    }
+
+    .search form {
+        margin-top: 0.6rem;
+        width: 62%;
+    }
+
+    .input {
+        height: 2.8rem;
+    }
+
+    button {
+        height: 2.8rem;
+        width: 28%;
+        padding: 0.5rem;
+        margin-left: 8%;
+        font-size: 1rem;
+    }
+}

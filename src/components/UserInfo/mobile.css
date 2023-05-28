@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .userInfo {
+        max-width: 30rem;
+    }
+}
