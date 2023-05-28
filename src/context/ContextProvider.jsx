@@ -8,7 +8,7 @@ const ContextProvider = ({ children }) => {
     const [error, setError] = useState(null)  //state to save the error 404, wrong user
 
 
-    const token = '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'; // personal token to call the API
+    const token = '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'; // personal token to call the API
     const userLink = `https://api.github.com/users/${userName}`
     const userReposLink = `https://api.github.com/users/${userName}/repos?sort=created` //url to get the repositories sorted by creation date using
     // ?sort=created
@@ -43,10 +43,7 @@ const ContextProvider = ({ children }) => {
                 setError("Expired token")
             }
         }
-
-
     };
-
     return (
         <MyContext.Provider value={{ userInfo, setUserName, getUser, setUserRepos, userRepos, error, setError }}>
             {children}
