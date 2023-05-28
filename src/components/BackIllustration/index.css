@@ -1,0 +1,12 @@
+.backIllustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backIllustration h1 {
+    font-family: 'Montserrat';
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
