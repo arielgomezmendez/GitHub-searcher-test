@@ -34,7 +34,7 @@ You can try the application online: https://github-searcher-test-three.vercel.ap
 
 If you want to make custom adjustments, you can edit the CSS files in the `src/components/*.css` paths to change the style of the application.
 
-## Contacto
+## Contact
 
 This project was created by Ariel Gómez Méndez
 Email: arielgomezmendez94@gmail.com
