@@ -25,7 +25,6 @@ const ContextProvider = ({ children }) => {
         if (response.ok) {
             let data = await response.json();
             setUserInfo(data);
-
             //Get the user repositories
             const reposResponse = await fetch(userReposLink);
             const repositories = await reposResponse.json()
