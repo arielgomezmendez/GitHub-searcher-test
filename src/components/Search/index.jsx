@@ -4,9 +4,7 @@ import "./mobile.css"
 import githubLogo from "../../assets/github-logo.png"
 import MyContext from '../../context/MyContext'
 
-
 const Search = () => {
-
     const { setUserName, getUser } = useContext(MyContext) //Get from ContextProvider
 
     //Function to get the user name

@@ -1,11 +1,10 @@
 import React, { useContext } from 'react'
 import "./index.css"
+import "./mobile.css"
 import UserInfo from '../UserInfo';
 import MyContext from '../../context/MyContext';
 import BackIllustration from '../BackIllustration';
 import ReposList from '../ReposList';
-import "./mobile.css"
-
 
 const GitHubUser = () => {
     const { userRepos, error, setError } = useContext(MyContext)
