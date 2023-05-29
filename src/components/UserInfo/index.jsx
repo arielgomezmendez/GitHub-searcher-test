@@ -26,7 +26,6 @@ const UserInfo = () => {
                     <IconNotebook /> <p className='number'>{`${userInfo.public_repos} public repos`}</p>
                     <IconUsers /> <p className='number'>{`${userInfo.followers} followers`}</p>
                 </div>
-
                 <p className='bio'>{userInfo.bio}</p>
             </article>
         </>

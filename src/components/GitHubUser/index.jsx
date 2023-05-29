@@ -6,15 +6,13 @@ import BackIllustration from '../BackIllustration';
 import ReposList from '../ReposList';
 import "./mobile.css"
 
-
 const GitHubUser = () => {
-    const { userRepos, error, setError } = useContext(MyContext)
+    const { userRepos, error } = useContext(MyContext)
 
     return (
         //User information
         <section className='mainContainer'>
             {error && <p className='wrongUser'>{error}</p>}
-
             {
                 !Array.isArray(userRepos) ? (
                     <BackIllustration />

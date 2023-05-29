@@ -4,11 +4,9 @@ import "./mobile.css"
 import githubLogo from "../../assets/github-logo.png"
 import MyContext from '../../context/MyContext'
 
-
 const Search = () => {
 
     const { setUserName, getUser } = useContext(MyContext) //Get from ContextProvider
-
     //Function to get the user name
     const onchange = (event) => {
         setUserName(event.target.value)
@@ -26,7 +24,6 @@ const Search = () => {
                 <input placeholder="User name" type="text" name="text" className="input" onChange={onchange} required />
                 <button >Search</button>
             </form>
-
         </div>
     )
 }
