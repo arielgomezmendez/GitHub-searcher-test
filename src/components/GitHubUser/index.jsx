@@ -5,10 +5,6 @@ import UserInfo from '../UserInfo';
 import MyContext from '../../context/MyContext';
 import BackIllustration from '../BackIllustration';
 import ReposList from '../ReposList';
-<<<<<<< HEAD
-import "./mobile.css"
-=======
->>>>>>> f415529216dc8b00ac6bbdbebcdbf084fa57e396
 
 const GitHubUser = () => {
     const { userRepos, error } = useContext(MyContext)
